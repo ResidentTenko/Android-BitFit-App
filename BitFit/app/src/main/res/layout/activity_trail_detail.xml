@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    android:padding="10dp"
+    tools:context=".TrailDetailActivity">
     <TextView
         android:id="@+id/trailNameLabel"
         android:layout_width="wrap_content"
@@ -33,46 +34,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/hoursWalkedLabel"
+        android:id="@+id/milesTravelledLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/milkshake"
-        android:text="Hours Walked:"
+        android:text="Miles Travelled:"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/trailNameLabel" />
 
     <EditText
-        android:id="@+id/hoursInputEt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/milkshake"
-        android:hint="Enter Hours Walked"
-        android:inputType="numberDecimal"
-        android:maxLines="1"
-        android:textColorHighlight="@color/some_green"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/hoursWalkedLabel"
-        app:layout_constraintTop_toBottomOf="@+id/trailInputEt" />
-
-    <TextView
-        android:id="@+id/milesTraveledLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/milkshake"
-        android:text="Hours Walked:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hoursWalkedLabel" />
-
-    <EditText
-        android:id="@+id/milesInputEt"
+        android:id="@+id/milesTravelledInputEt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milkshake"
@@ -86,11 +60,40 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toEndOf="@+id/milesTraveledLabel"
-        app:layout_constraintTop_toBottomOf="@+id/hoursInputEt" />
+        app:layout_constraintStart_toEndOf="@+id/milesTravelledLabel"
+        app:layout_constraintTop_toBottomOf="@+id/trailInputEt" />
+
+    <TextView
+        android:id="@+id/workoutTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/milkshake"
+        android:text="Hours Walked:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milesTravelledLabel" />
+
+    <EditText
+        android:id="@+id/workoutTimeInputEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/milkshake"
+        android:hint="Enter Hours Walked"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColorHighlight="@color/some_green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workoutTimeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/milesTravelledInputEt" />
+
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/saveNewTrailBt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD NEW ENTRY"
@@ -99,6 +102,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
