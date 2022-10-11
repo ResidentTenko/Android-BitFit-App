@@ -4,15 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mountain_drawn"
+
     android:padding="10dp"
     tools:context=".TrailDetailActivity">
+
     <TextView
         android:id="@+id/trailNameLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/milkshake"
-        android:text="Trail Name:"
+        android:text="Trail Name: "
+        android:paddingRight="10dp"
+
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,10 +25,11 @@
 
     <EditText
         android:id="@+id/trailInputEt"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/milkshake"
-        android:hint="Enter Trail Name"
+        android:hint="Trail Name"
         android:inputType="text"
         android:maxLines="1"
         android:textColorHighlight="@color/some_green"
@@ -35,11 +41,13 @@
 
     <TextView
         android:id="@+id/milesTravelledLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/milkshake"
-        android:text="Miles Travelled:"
+        android:paddingRight="10dp"
+        android:text="Miles Travelled: "
+
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,10 +55,10 @@
 
     <EditText
         android:id="@+id/milesTravelledInputEt"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milkshake"
-        android:hint="Enter Miles Traveled"
+        android:hint="Enter Miles"
         android:imeOptions="actionDone"
         android:inputType="numberDecimal"
         android:maxLines="1"
@@ -59,17 +67,18 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toEndOf="@+id/milesTravelledLabel"
         app:layout_constraintTop_toBottomOf="@+id/trailInputEt" />
 
     <TextView
         android:id="@+id/workoutTimeLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/milkshake"
         android:text="Hours Walked:"
+        android:paddingRight="10dp"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,10 +86,10 @@
 
     <EditText
         android:id="@+id/workoutTimeInputEt"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/milkshake"
-        android:hint="Enter Hours Walked"
+        android:hint="Enter Hours "
         android:inputType="numberDecimal"
         android:maxLines="1"
         android:textColorHighlight="@color/some_green"

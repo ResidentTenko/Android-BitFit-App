@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val hikingAdapter = HikingTrailAdapter(this, hikingTrails)
         hikingRecyclerView.adapter = hikingAdapter
 
-        lifecycleScope.launch(IO) {
+        lifecycleScope.launch {
             (application as HikingTrailApplication).db.hikingTrailDao().getAll().collect{ databaseList ->
                 databaseList.map { entity ->
                     HikingTrailEntity(
@@ -43,12 +43,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
         hikingRecyclerView.layoutManager = LinearLayoutManager(this).also {
             val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
             hikingRecyclerView.addItemDecoration(dividerItemDecoration)
         }
-
         // go to TrailDetailActivity on click
         val newTrailButton = findViewById<Button>(R.id.addTrail)
         newTrailButton.setOnClickListener{

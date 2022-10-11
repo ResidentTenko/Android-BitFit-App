@@ -54,7 +54,7 @@ class TrailDetailActivity : AppCompatActivity() {
                 (application as HikingTrailApplication).db.hikingTrailDao().insert(
                     // now create a table instance and feed it with the input values
                     // then plug that into the database
-                    HikingTrailEntity(trail,miles,time)
+                    HikingTrailEntity(trail, "$miles miles walked", "$time hours spent")
                 )
             }
             // return back to main activity
