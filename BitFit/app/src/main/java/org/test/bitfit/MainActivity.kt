@@ -3,12 +3,12 @@ package org.test.bitfit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import org.test.bitfit.databinding.ActivityMainBinding
 
@@ -55,5 +55,4 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
 }
