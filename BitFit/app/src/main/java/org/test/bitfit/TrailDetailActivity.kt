@@ -1,4 +1,4 @@
-package org.test.myapplication
+package org.test.bitfit
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
@@ -31,7 +33,6 @@ class TrailDetailActivity : AppCompatActivity() {
          * create EditText objects and connect them to the xml
          * Use them to grab values entered by the user
          */
-
 
         saveTrailBtn.setOnClickListener{
             // hide the button on button click
@@ -58,8 +59,6 @@ class TrailDetailActivity : AppCompatActivity() {
             }
             // return back to main activity
             finish()
-
         }
-
     }
 }

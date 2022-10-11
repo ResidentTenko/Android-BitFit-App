@@ -1,4 +1,4 @@
-package org.test.myapplication
+package org.test.bitfit
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("org.test.myapplication", appContext.packageName)
+        assertEquals("org.test.bitfit", appContext.packageName)
     }
 }

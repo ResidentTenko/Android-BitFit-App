@@ -1,4 +1,4 @@
-package org.test.myapplication
+package org.test.bitfit
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -20,4 +20,3 @@ data class HikingTrailEntity(
     @ColumnInfo(name = "workout_time") val workoutTime: String?,
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
 )
-

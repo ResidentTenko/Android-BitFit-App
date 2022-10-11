@@ -1,4 +1,4 @@
-package org.test.myapplication
+package org.test.bitfit
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -29,9 +29,6 @@ interface HikingTrailDao {
     @Insert
     fun insert(hikingTrail: HikingTrailEntity)
     // insert a list of hiking trails
-    @Insert
-    fun insertAll(hikingTrails: List<HikingTrailEntity>)
-    // delete just one value in the database
     @Delete
     fun delete(hikingTrail: HikingTrailEntity)
     // query table declared in HikingTrailEntity.kt

@@ -1,4 +1,4 @@
-package org.test.myapplication
+package org.test.bitfit
 
 import android.content.Context
 import androidx.room.Database
